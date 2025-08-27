@@ -1,11 +1,79 @@
 /* Club Registration Form Styles */
-/* TODO: Add your CSS styles here in Step 2 */
 
-/* Starter structure - feel free to modify */
-/* 
-Requirements for Step 2:
-- Link this file in your HTML
-- Style the body, form, inputs, and select elements
-- Use at least 3 different CSS properties (color, background, padding, margin, border, etc.)
-- Make it look professional and easy to read
-*/
+/* Body styling for readability and background */
+body {
+    background: #f4f6fb;
+    color: #222;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the form and give it a card-like appearance */
+form {
+    background: #fff;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+/* Input and select styling for clarity */
+input, select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #cfd8dc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f9fafb;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #4f8cff;
+    outline: none;
+}
+
+/* Label styling for spacing */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Button styling for visibility */
+button, input[type="submit"] {
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #357ae8;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    form {
+        padding: 24px 16px;
+    }
+
+    input, select {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    button, input[type="submit"] {
+        padding: 10px 0;
+        font-size: 0.9rem;
+    }
+}
